@@ -1,0 +1,28 @@
+Artifact,
+Artifact repository -jfrog artifactory, Sonartype nexus, Dockerhub
+
+
+build stage, testing stage, deploy stage
+
+Docker file=source code+dependencies+port number+commands
+
+docker image= the moment you build dockerfile(no dependency issue, no version issue)
+docker container =run docker image
+docker hub=docker image storage like repo,
+
+
+Docker Engine:
+Docker Daemon(runs in background like garbage collector)
+Docker client-> CLI (user -> Daemon)
+Docker REST api-> Enable the communication between the cliend & daemon
+
+
+Compressed images, mostly in mbs so, companies prefer docker.
+Scenarios
+
+itd: interactive terminal detached
+
+Use a public image:
+	docker pull httpd :download the image
+	docker images :list the available images
+	docker run -itd --name apachecontainer -p "8060:80" httpd
